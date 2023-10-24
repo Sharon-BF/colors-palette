@@ -1,5 +1,6 @@
 import { type Data } from '@/types'
 
+// Fetch colors from API
 export const fetchColors = async (URL: string, page: number) => {
   try {
     const response = await fetch(`${URL}?page=${page}`)

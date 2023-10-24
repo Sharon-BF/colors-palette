@@ -1,23 +1,7 @@
-import { type MappedData, type InitValues } from '@/types.d'
+import { type MappedData } from '@/types.d'
 import { useColor } from '@/hooks/useColor'
 import NOT_FOUND from '../../public/notFound.png'
-
-function Color ({ color, initValues }: { color: MappedData, initValues: InitValues }) {
-  const { id, name, code } = color
-  const { isCopied, idSelect } = initValues
-  return (
-    <div className='flex flex-col justify-center items-center'>
-      {
-        isCopied && idSelect === id
-          ? <p>Copiado</p>
-          : <>
-            <p>{name}</p>
-            <p>{code}</p>
-          </>
-      }
-    </div>
-  )
-}
+import { Color } from './Color'
 
 // The component contains the list of colors of the request
 function ListOfColors ({ colors }: { colors: MappedData[] }) {
@@ -40,6 +24,7 @@ function ListOfColors ({ colors }: { colors: MappedData[] }) {
   )
 }
 
+// The component contains the message when there are no colors
 function NoColors () {
   return (
     <div className='flex flex-col items-center'>

@@ -8,6 +8,7 @@ export function useColor () {
     idSelect: 0
   })
 
+  // Function to copy the color code to the clipboard
   const handleClick = async (code: string, id: number) => {
     try {
       await navigator.clipboard.writeText(code)

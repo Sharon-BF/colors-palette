@@ -6,6 +6,7 @@ export function useFetch (URL: string, page: number) {
   const [colors, setColors] = useState<MappedData[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
+  // Function to get the colors of the request
   const getColors = async () => {
     const newColors = await fetchColors(URL, page)
     setColors(newColors)
