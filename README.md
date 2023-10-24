@@ -1,5 +1,5 @@
 # Colors Palette
-***
+
 The application allows you to copy the hexadecimal code of each color you select
 
 <img src='./public/demo.png'/>
@@ -16,7 +16,6 @@ The application allows you to copy the hexadecimal code of each color you select
 - TypeScript
 - Tailwind
 
----
 
 ## Start the project
 
@@ -25,6 +24,9 @@ The application allows you to copy the hexadecimal code of each color you select
 
 ```
 $ npm run install
+```
+```
+$ npm install dotenv
 ```
 
 - initialize eslint from next
@@ -50,17 +52,3 @@ $ "@typescript-eslint/no-misused-promises": "off"
 ```
 $ npm run dev
 ```
-
-
-- crear los widgets de la paleta de colores
-- función de click al hacer click
-- customizar vistas
-- aplicar la api con fetch
-- realizar testing
-- refactorizar el código
-
-Stack tecnológico
-- React
-- NextJS
-- Tailwind
-- TypeScript
