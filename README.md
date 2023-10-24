@@ -34,7 +34,7 @@ $ npm install dotenv
 $ npx eslint --init
 ```
 
-- configure development environment variable
+- add .env.development file and configure
 ```
 $ NEXT_PUBLIC_URL = https://reqres.in/api/colors
 ```
