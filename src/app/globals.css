@@ -1,27 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  h1 {
+    @apply text-4xl;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+h5 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-base;
+}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(to bottom, #0067ff, #7987fd, #abaafb, #d3cff9, #f6f6f6);
+  }
+  
+  main {
+    height: 100vh;
+  }
+  
+  section {
+    width: 100%;
+    max-width: 1200px;
+    border: solid 3px #fff;
+    padding: 15px 0;
+    min-height: 200px;
+    overflow: auto;
+  }
+  
+  .section {
+    width: 100%;
+    max-width: 1200px;
+    border: solid 3px #fff;
+  }
+  
+  .palette {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 0 15px;
+}
+
+li {
+  height: 9rem;
+  border-radius: 15px;
+  cursor: pointer;
+  color: black;
+  padding: 15px;
+  border: 3px solid #0000;
 }
